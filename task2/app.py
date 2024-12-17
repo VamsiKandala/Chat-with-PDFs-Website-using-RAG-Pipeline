@@ -11,7 +11,7 @@ from huggingface_hub import login
 import numpy as np
 
 # Log in with Hugging Face API key
-HF_API_KEY = "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"  # Replace with your actual API key
+HF_API_KEY = "[Your_API_Key]"  # Replace with your actual API key
 login(HF_API_KEY)
 
 # Streamlit App Configuration
