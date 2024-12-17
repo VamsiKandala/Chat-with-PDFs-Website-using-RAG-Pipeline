@@ -9,7 +9,7 @@ import torch
 import fitz  # PyMuPDF for handling images
 
 # Log in with the Hugging Face API key
-HF_API_KEY = "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"  # Replace with your actual API key
+HF_API_KEY = "[Your_API_Key]"  # Replace with your actual API key
 login(HF_API_KEY)
 
 # Extract text and tables from PDF
