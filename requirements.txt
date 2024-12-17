@@ -1,0 +1,12 @@
+streamlit
+huggingface-hub
+transformers
+sentence-transformers
+langchain
+faiss-cpu
+pdfplumber
+numpy
+pandas
+torch
+requests
+beautifulsoup4
