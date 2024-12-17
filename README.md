@@ -68,3 +68,60 @@ This project implements two Retrieval-Augmented Generation (RAG) pipelines for i
   --> https://www.washington.edu/
   --> https://www.stanford.edu/
   --> https://und.edu/
+
+# Project Structure
+
+/Chat-with-PDFs-Website-using-RAG-Pipeline
+│
+├── task1/
+│   ├── app.py          # Main application for Task 1 (Chat with PDF)
+│   └── pipeline.py     # RAG pipeline for Task 1 (PDF handling)
+│
+├── task2/
+│   ├── app.py          # Main application for Task 2 (Chat with Website)
+│   └── pipeline.py     # RAG pipeline for Task 2 (Website handling)
+│
+├── requirements.txt    # Project dependencies
+└── README.md           # Project documentation
+
+# Task 1: Chat with PDF (app.py & pipeline.py)
+ app.py: The main application that interfaces with the user to input PDF URLs, view extracted data, and query the system for information from the PDF.
+ pipeline.py: Contains the backend logic for extracting data from PDFs, chunking it, converting it into embeddings, and storing/retrieving data from the vector database.
+
+# Task 2: Chat with Website (app.py & pipeline.py)
+ --> app.py: Provides a user interface for interacting with websites, allowing users to input URLs, view the scraped data, and ask questions.
+ --> pipeline.py: Handles the crawling, scraping, chunking, and embedding of website data. It stores this data in a vector database and retrieves the relevant chunks to generate responses.
+
+# Requirements
+
+ To run the project, you need to install the required dependencies. Use the following command to install the necessary packages:
+-->  pip install -r requirements.txt
+
+# Setup Instructions
+
+**1. Clone the repository:**
+  git clone https://github.com/VamsiKandala/Chat-with-PDFs-Website-using-RAG-Pipeline
+  cd Chat-with-PDFs-Website-using-RAG-Pipeline
+  
+**2. Install the required dependencies:**
+   pip install -r requirements.txt
+
+**3. Start the Streamlit application for Task 1 (Chat with PDF):**
+   streamlit run task1/app.py
+
+**4. Start the Streamlit application for Task 2 (Chat with Website):**
+   streamlit run task2/app.py
+
+# How it Works
+
+**Task 1 (Chat with PDF):**
+
+   --> The user uploads a PDF or provides a URL for the PDF.
+   --> The system extracts the relevant content, converts it into chunks, and generates embeddings.
+   --> The user can ask questions about the PDF, and the system retrieves the relevant chunks and generates a response using an LLM.
+
+**Task 2 (Chat with Website):**
+
+   --> The user inputs a URL for a website to crawl and scrape.
+   --> The system extracts the website’s content, generates embeddings, and stores them in a vector database.
+   --> Users can query the system for specific information, and the system generates responses based on the data retrieved from the website.
